@@ -1,0 +1,23 @@
+{
+  "name": "tpflow",
+  "bin": {
+    "tpflow": "index.js"
+  },
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yuanjing.fan@cootek.cn",
+  "license": "ISC",
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.16.0",
+    "fs-extra": "^6.0.1",
+    "glob": "^7.1.2",
+    "inquirer": "^6.0.0",
+    "shelljs": "^0.8.2"
+  },
+  "dependencies": {}
+}

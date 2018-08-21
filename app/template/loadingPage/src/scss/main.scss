@@ -1,0 +1,112 @@
+$more-color: #c49a5f;
+$share-color: #74c2bd;
+$btn-border-color: #fff;
+$color-font: #fff;
+$downloadbar-color: #e55233;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background-image: url('../images/bg.jpg');
+  background-color: #22133a;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  font-weight: 100;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 6rem;
+  display: block;
+  overflow: hidden;
+}
+
+.header {
+  margin-top: 9%;
+  text-align: center;
+  .icon {
+    width: 9rem;
+    height: 2.39rem;
+    background-size: 100% 100%;
+    vertical-align: top;
+    background: url('../images/icon.webp') 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+  }
+  .title-wrap {
+    line-height: 1.8;
+    margin: 0 auto;
+    .title-2 {
+      font-size: 0.7rem;
+      color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+    }
+  }
+}
+
+.subtitle-1 {
+  width: 80%;
+  margin: 12% auto 0 auto;
+  text-align: center;
+  color: #fffbf3;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 100;
+}
+
+.main-pic {
+  width: 18rem;
+  height: 15.1875rem;
+  display: block;
+  margin: 0 auto;
+  background: url('../images/img.webp') 0 0 no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 10%;
+}
+
+.btn-group {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 0;
+  .text {
+    padding-top: 0.4rem;
+    padding-bottom: 1rem;
+    i {
+      color: #aaa;
+      font-weight: 300;
+      font-size: 0.8rem;
+      font-style: normal;
+    }
+  }
+  .btn-update {
+    padding-top: 1rem;
+    .btn-download {
+      height: 2.5rem;
+      background: -prefix-linear-zgradient(left, #013d5d, #142a6a);
+      background: linear-gradient(to right, #013d5d, #142a6a);
+      font-size: 0.8rem;
+      color: #ffffff;
+      width: 40%;
+      border-radius: 1.25rem;
+      border: none;
+      font-weight: normal;
+    }
+  }
+}

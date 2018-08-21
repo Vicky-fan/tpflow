@@ -1,0 +1,115 @@
+//此版本为 html 宽度为 16px 的版本
+
+.google-ad {
+  display: none;
+}
+
+.theme-noti-weekly-bottom {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.875rem;
+  width: 336px;
+  height: 280px
+}
+
+$ITEM_TITLE_FONT_COLOR: #9b9b9b;
+$BLUE: #35a8fc;
+$AD_BACKGROUND_COLOR: #FFF;
+//2016.1.25 谢英杰
+//确定版本之后，要合并到common之中
+.oblong-more-ads {
+  width: 98.24%;
+  margin: 0.75rem .88% 0.75rem;
+  min-height: 10rem;
+  float: left;
+}
+
+.oblong-more-ads {
+  background-color: $AD_BACKGROUND_COLOR;
+  position: relative;
+  .ads-label {
+    position: absolute;
+    top: .3125rem;
+    left: 0;
+    height: 1.25rem;
+    width: 2.5rem;
+    background: url("http://ime.cdn.cootekservice.com/default/webpage/YouAreBeautiful/images/icons/ad-label.png") no-repeat 0 0;
+    background-size: 100% auto;
+    font-size: .5625rem;
+    padding: 1.1% 0 0 2.2%;
+    color: #fff;
+    z-index: 10;
+  }
+  .ad-choices {
+    position: absolute;
+    right: 0;
+    top: 0;
+    $r: 0.9375rem;
+    width: $r;
+    height: $r;
+    background: url("http://ime.cdn.cootekservice.com/default/webpage/YouAreBeautiful/images/icons/i.png") no-repeat 0 0;
+    background-size: contain;
+    z-index: 99;
+  }
+  //overflow: auto;
+  .ads-header {
+    display: flex;
+    align-items: center;
+    .ads-icon {
+      padding: .5rem;
+      width: 3.4375rem;
+      height: 3.4375rem;
+      border-radius: .375rem;
+      overflow: hidden;
+      min-width: 3.4375rem;
+      >img {
+        width: 100%;
+      }
+    }
+    .ads-txt {
+      flex: 1;
+      line-height: 1.1;
+      max-height: 2.1em;
+      color: #4e535e;
+      min-width: 6.25rem;
+      overflow: hidden;
+      margin: 0.625rem .5rem;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .button-container {
+      display: flex;
+      padding: 0 0.5rem;
+      .ads-btn {
+        background: $BLUE;
+        color: #FFF;
+        border: none;
+        display: inline-block;
+        border-radius: 3px;
+        padding: 0 7px;
+        margin: auto;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+  .ads-bd {
+    padding-bottom: 50%;
+    position: relative;
+    overflow: hidden;
+    >img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+  .ad-footer {
+    padding: 0 .5rem .5rem;
+    line-height: 1rem;
+    color: $ITEM_TITLE_FONT_COLOR;
+  }
+}
